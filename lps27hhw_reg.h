@@ -649,8 +649,8 @@ int32_t lps27hhw_int_on_threshold_set(const stmdev_ctx_t *ctx,
 int32_t lps27hhw_int_on_threshold_get(const stmdev_ctx_t *ctx,
                                       lps27hhw_pe_t *val);
 
-int32_t lps27hhw_int_treshold_set(const stmdev_ctx_t *ctx, uint16_t buff);
-int32_t lps27hhw_int_treshold_get(const stmdev_ctx_t *ctx, uint16_t *buff);
+int32_t lps27hhw_int_threshold_set(const stmdev_ctx_t *ctx, uint16_t buff);
+int32_t lps27hhw_int_threshold_get(const stmdev_ctx_t *ctx, uint16_t *buff);
 
 typedef enum
 {
