@@ -311,15 +311,13 @@ typedef struct
 typedef struct
 {
 #if DRV_BYTE_ORDER == DRV_LITTLE_ENDIAN
-uint8_t f_mode                          :
-  3;  /* f_mode + trig_modes */
+  uint8_t f_mode                          : 3;  /* f_mode + trig_modes */
   uint8_t stop_on_wtm                     : 1;
   uint8_t not_used_01                     : 4;
 #elif DRV_BYTE_ORDER == DRV_BIG_ENDIAN
   uint8_t not_used_01                     : 4;
   uint8_t stop_on_wtm                     : 1;
-uint8_t f_mode                          :
-  3;  /* f_mode + trig_modes */
+  uint8_t f_mode                          : 3;  /* f_mode + trig_modes */
 #endif /* DRV_BYTE_ORDER */
 } lps27hhw_fifo_ctrl_t;
 
