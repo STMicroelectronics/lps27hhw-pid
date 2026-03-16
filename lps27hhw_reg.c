@@ -1726,7 +1726,7 @@ int32_t lps27hhw_int_threshold_get(const stmdev_ctx_t *ctx, uint16_t *buff)
 
   lps27hhw_ths_p_l_t ths_p_l;
   lps27hhw_ths_p_h_t ths_p_h;
-  ret += lps27hhw_read_reg(ctx, LPS27HHW_THS_P_L,
+  ret = lps27hhw_read_reg(ctx, LPS27HHW_THS_P_L,
                            (uint8_t *)&ths_p_l, 1);
   ret += lps27hhw_read_reg(ctx, LPS27HHW_THS_P_H,
                            (uint8_t *)&ths_p_h, 1);
